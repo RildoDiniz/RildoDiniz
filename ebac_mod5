@@ -1,0 +1,42 @@
+while True:
+    # Passo 1: Receber ao menos 2 números do usuário
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+
+    # Passo 2: Converter os valores recebidos para int ou float
+    num1 = float(num1)
+    num2 = float(num2)
+
+    # Passo 3: Apresentar opções de operações matemáticas ao usuário
+    print("\nEscolha a operação que deseja realizar:")
+    print("1) Adição")
+    print("2) Subtração")
+    print("3) Multiplicação")
+    print("4) Divisão")
+    escolha = input("Digite o número da operação desejada: ")
+
+    # Passo 4: Executar a operação escolhida e exibir o resultado
+    if escolha == '1':
+        resultado = num1 + num2
+        print(f"\nResultado: {num1} + {num2} = {resultado}")
+    elif escolha == '2':
+        resultado = num1 - num2
+        print(f"\nResultado: {num1} - {num2} = {resultado}")
+    elif escolha == '3':
+        resultado = num1 * num2
+        print(f"\nResultado: {num1} * {num2} = {resultado}")
+    elif escolha == '4':
+        if num2 != 0:
+            resultado = num1 / num2
+            print(f"\nResultado: {num1} / {num2} = {resultado}")
+        else:
+            print("\nErro: Divisão por zero não é permitida.")
+    else:
+        print("\nOpção inválida. Tente novamente.")
+
+    # Passo 5: Perguntar ao usuário se deseja realizar outra operação
+    repetir = input("\nDeseja realizar outra operação? (s/n): ").lower()
+    if repetir != 's':
+        break
+
+print("\nPrograma encerrado.")
