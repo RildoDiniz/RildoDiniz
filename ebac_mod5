@@ -7,7 +7,7 @@ while True:
     num1 = float(num1)
     num2 = float(num2)
 
-    # Passo 3: Apresentar opções de operações matemáticas ao usuário
+    # Passo 3: Implementando 4 operações matemáticas no código
     print("\nEscolha a operação que deseja realizar:")
     print("1) Adição")
     print("2) Subtração")
@@ -15,7 +15,7 @@ while True:
     print("4) Divisão")
     escolha = input("Digite o número da operação desejada: ")
 
-    # Passo 4: Executar a operação escolhida e exibir o resultado
+    # Passo 4: Executar a operação escolhida e exibir o resultado na tela
     if escolha == '1':
         resultado = num1 + num2
         print(f"\nResultado: {num1} + {num2} = {resultado}")
@@ -34,7 +34,7 @@ while True:
     else:
         print("\nOpção inválida. Tente novamente.")
 
-    # Passo 5: Perguntar ao usuário se deseja realizar outra operação
+    # Passo 5: laço de repetição ou uma condicional. 
     repetir = input("\nDeseja realizar outra operação? (s/n): ").lower()
     if repetir != 's':
         break
